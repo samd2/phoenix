@@ -102,7 +102,7 @@ ln -s $(pwd)/libs/phoenix $TRAVIS_BUILD_DIR
 ./b2 headers
 if [ $TRAVIS_OS_NAME = osx ]; then
   export PATH="/usr/local/opt/ccache/libexec:$PATH"
-  true # brew install ccache
+  true brew install ccache
 fi
 
 echo "using ${TOOLSET%%-*} : ${TOOLSET#*-} : ccache `echo $TOOLSET | sed 's/clang/clang++/;s/gcc/g++/'` ;" > ~/user-config.jam
