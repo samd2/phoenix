@@ -56,8 +56,8 @@ def main(ctx):
   linux_cxx("TOOLSET=clang-8 CXXSTD=17,2a Job 39", "g++", packages="clang-8", buildtype="boost", image="cppalliance/droneubuntu1604:1", environment={'TOOLSET': 'clang-8', 'CXXSTD': '17,2a', 'DRONE_JOB_UUID': 'ca3512f4df'}, globalenv=globalenv),
   linux_cxx("TOOLSET=clang-9 CXXSTD=03,11,14 SANITIZED Job 40", "g++", packages="clang-9", buildtype="boost", image="cppalliance/droneubuntu1804:1", environment={'TOOLSET': 'clang-9', 'CXXSTD': '03,11,14', 'DRONE_JOB_UUID': 'af3e133428'}, globalenv=globalenv),
   linux_cxx("TOOLSET=clang-9 CXXSTD=17,2a SANITIZED Job 41", "g++", packages="clang-9", buildtype="boost", image="cppalliance/droneubuntu1804:1", environment={'TOOLSET': 'clang-9', 'CXXSTD': '17,2a', 'DRONE_JOB_UUID': '761f22b2c1'}, globalenv=globalenv),
-  osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=03,11 Job 42", "clang++", packages="", buildtype="boost", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': '03,11', 'DRONE_JOB_OS_NAME': 'osx', 'DRONE_JOB_UUID': '92cfceb39d'}, globalenv=globalenv),
-  osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=14,1z Job 43", "clang++", packages="", buildtype="boost", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': '14,1z', 'DRONE_JOB_OS_NAME': 'osx', 'DRONE_JOB_UUID': '0286dd552c'}, globalenv=globalenv),
+  osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=03,11 Job 42", "clang++", packages="", buildtype="boost", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': '03,11', 'DRONE_JOB_UUID': '92cfceb39d'}, globalenv=globalenv),
+  osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=14,1z Job 43", "clang++", packages="", buildtype="boost", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': '14,1z', 'DRONE_JOB_UUID': '0286dd552c'}, globalenv=globalenv),
   ]
 
 # from https://github.com/boostorg/boost-ci
